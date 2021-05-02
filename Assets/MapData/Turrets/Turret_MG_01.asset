@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fc713cbd5f56c44bfa46f07560bda2, type: 3}
+  m_Name: Turret_MG_01
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: hitEffect
+      Entry: 7
+      Data: 0|GreatFilter.MapData.Turrets.HitEffects.DataDmgEffect, Assembly-CSharp
+    - Name: dmg
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  isInitial: 1
+  metall: 100
+  gas: 0
+  gravium: 0
+  platin: 0
+  upgrades:
+  - metall: 250
+    gas: 0
+    gravium: 0
+    platin: 100
+    output: {fileID: 11400000, guid: e1c0ec76ad6f5e44d827f1b9af59359e, type: 2}
+  - metall: 100
+    gas: 0
+    gravium: 100
+    platin: 150
+    output: {fileID: 11400000, guid: 29649e1a038f37e4c9468242f07d8c3c, type: 2}
+  - metall: 100
+    gas: 100
+    gravium: 0
+    platin: 150
+    output: {fileID: 11400000, guid: 2d773858c99ac4c4d8dca87197a94811, type: 2}
+  fireRate: 2
+  projectileAmmount: 1
+  variance: 2.5
+  projectileSpeed: 30
+  isExplosive: 0
+  explosionRange: 0
+  explosionDuration: 0
