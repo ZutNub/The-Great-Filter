@@ -1,0 +1,233 @@
+Basic Enemy.png
+size:2030,2021
+filter:Linear,Linear
+pma:true
+BarrelCase_Small_1 Mid Bot
+bounds:90,1992,31,27
+BarrelCase_Small_1 Mid Top
+bounds:123,1992,31,27
+Binding_Big_2 Mid
+bounds:409,1800,98,243
+rotate:90
+Binding_Big_3 Mid
+bounds:396,1911,68,171
+rotate:90
+Binding_Big_3 Mid #1
+bounds:188,1821,88,219
+rotate:90
+Binding_Medium_1 Mid
+bounds:188,1821,88,219
+rotate:90
+Binding_Medium_2 Mid
+bounds:763,1975,44,134
+rotate:90
+Binding_Small_1 Bot
+bounds:667,1978,46,41
+Binding_Small_1 Top
+bounds:715,1978,46,41
+CannonBarrel_Small_1 Mid Bot
+bounds:579,1980,86,39
+CannonBarrel_Small_1 Mid Top
+bounds:2,1999,86,20
+CockpitPice_Small_1 Mid
+bounds:821,1790,165,103
+CockpitPice_Small_1 Mid #1
+bounds:654,1790,165,103
+Cockpit_Big_1 Mid
+bounds:1804,1692,181,215
+rotate:90
+EndPice_1
+bounds:156,1983,55,36
+Enemy Blood/Blood_0
+bounds:1013,1362,400,400
+Enemy Blood/Blood_1
+bounds:1415,1290,400,400
+Enemy Blood/Blood_10
+bounds:2,1256,400,400
+Enemy Blood/Blood_11
+bounds:404,1208,400,400
+Enemy Blood/Blood_12
+bounds:806,960,400,400
+Enemy Blood/Blood_13
+bounds:1208,888,400,400
+Enemy Blood/Blood_14
+bounds:1610,888,400,400
+Enemy Blood/Blood_15
+bounds:2,854,400,400
+Enemy Blood/Blood_16
+bounds:404,806,400,400
+Enemy Blood/Blood_17
+bounds:806,558,400,400
+Enemy Blood/Blood_18
+bounds:1208,486,400,400
+Enemy Blood/Blood_19
+bounds:1610,486,400,400
+Enemy Blood/Blood_2
+bounds:2,452,400,400
+Enemy Blood/Blood_20
+bounds:404,404,400,400
+Enemy Blood/Blood_21
+bounds:806,156,400,400
+Enemy Blood/Blood_22
+bounds:1208,84,400,400
+Enemy Blood/Blood_23
+bounds:1610,84,400,400
+Enemy Blood/Blood_24
+bounds:2,50,400,400
+Enemy Blood/Blood_25
+bounds:404,2,400,400
+Engine_Big_1 Bot
+bounds:2,1679,274,140
+Engine_Big_1 Top #1
+bounds:278,1658,274,140
+Shell_Big_1 Mid
+bounds:1538,1749,127,264
+rotate:90
+Shell_Big_2 Mid
+bounds:1538,1749,127,264
+rotate:90
+Shell_Big_1 Mid #1
+bounds:554,1610,457,166
+Shell_Medium_1 Mid
+bounds:1298,1764,114,238
+rotate:90
+Shell_Medium_2 Mid #1
+bounds:1298,1764,114,238
+rotate:90
+Shell_Medium_2 Mid
+bounds:2,1828,89,184
+rotate:90
+Tentacle Case_Medium_1 Bot
+bounds:1221,1963,128,56
+Tentacle Case_Medium_1 Top
+bounds:1351,1963,128,56
+Tentacle Case_Medium_2 Bot
+bounds:988,1778,153,109
+Tentacle Case_Medium_2 Top
+bounds:1143,1774,153,109
+Tentacle Case_Small_1 Bot
+bounds:213,1983,36,41
+rotate:90
+Tentacle Case_Small_1 Top
+bounds:256,1983,36,41
+rotate:90
+Tentacle_Medium_1 Bot
+bounds:1481,1959,200,60
+Tentacle_Medium_1 Top
+bounds:1683,1959,200,60
+Tentacle_Medium_2 Bot
+bounds:2,1919,195,62
+Tentacle_Medium_2 Top
+bounds:199,1917,195,62
+Tentacle_Medium_3 Bot
+bounds:569,1900,228,73
+Tentacle_Medium_3 Top
+bounds:799,1895,228,73
+Tentacle_Medium_4 Mid Bot
+bounds:1029,1889,188,79
+Tentacle_Medium_4 Mid Top
+bounds:1663,1878,188,79
+Tentacle_Medium_5 Mid Bot
+bounds:1441,1880,220,77
+Tentacle_Medium_5 Mid Top
+bounds:1219,1885,220,76
+Tentacle_Small_1 Bot
+bounds:899,1970,159,49
+Tentacle_Small_1 Top
+bounds:1060,1970,159,49
+Tentacle_Small_2 Bot
+bounds:299,1981,138,38
+Tentacle_Small_2 Top
+bounds:439,1981,138,38
+ToothSpike_Small_1 Mid
+bounds:1968,1938,81,60
+rotate:90
+ToothSpike_Small_2 Mid
+bounds:1968,1938,81,60
+rotate:90
+ToothSpike_Small_1 Mid #1
+bounds:1885,1959,81,60
+ToothSpike_Small_3 Mid
+bounds:1885,1959,81,60
+TurretBase_Small_1 Mid
+bounds:1853,1875,84,82
+
+Basic Enemy_2.png
+size:2012,2012
+filter:Linear,Linear
+pma:true
+Binding_Small_1 Mid
+bounds:2,1410,800,600
+Layer1
+bounds:2,1410,800,600
+Layer99
+bounds:2,1410,800,600
+Enemy Blood/Blood_26
+bounds:2,1008,400,400
+Enemy Blood/Blood_27
+bounds:804,1610,400,400
+Enemy Blood/Blood_28
+bounds:2,606,400,400
+Enemy Blood/Blood_29
+bounds:1206,1610,400,400
+Enemy Blood/Blood_3
+bounds:2,204,400,400
+Enemy Blood/Blood_30
+bounds:1608,1610,400,400
+Enemy Blood/Blood_31
+bounds:404,1008,400,400
+Enemy Blood/Blood_32
+bounds:404,606,400,400
+Enemy Blood/Blood_33
+bounds:404,204,400,400
+Enemy Blood/Blood_34
+bounds:806,1208,400,400
+Enemy Blood/Blood_35
+bounds:806,806,400,400
+Enemy Blood/Blood_36
+bounds:1208,1208,400,400
+Enemy Blood/Blood_37
+bounds:806,404,400,400
+Enemy Blood/Blood_38
+bounds:1208,806,400,400
+Enemy Blood/Blood_39
+bounds:1208,404,400,400
+Enemy Blood/Blood_4
+bounds:1610,1208,400,400
+Enemy Blood/Blood_40
+bounds:1610,806,400,400
+Enemy Blood/Blood_41
+bounds:1610,404,400,400
+Enemy Blood/Blood_42
+bounds:806,2,400,400
+Enemy Blood/Blood_43
+bounds:1208,2,400,400
+Enemy Blood/Blood_44
+bounds:1610,2,400,400
+
+Basic Enemy_3.png
+size:1610,1208
+filter:Linear,Linear
+pma:true
+Enemy Blood/Blood_45
+bounds:2,806,400,400
+Enemy Blood/Blood_46
+bounds:2,404,400,400
+Enemy Blood/Blood_47
+bounds:404,806,400,400
+Enemy Blood/Blood_48
+bounds:2,2,400,400
+Enemy Blood/Blood_49
+bounds:404,404,400,400
+Enemy Blood/Blood_5
+bounds:806,806,400,400
+Enemy Blood/Blood_50
+bounds:1208,806,400,400
+Enemy Blood/Blood_6
+bounds:404,2,400,400
+Enemy Blood/Blood_7
+bounds:806,404,400,400
+Enemy Blood/Blood_8
+bounds:1208,404,400,400
+Enemy Blood/Blood_9
+bounds:806,2,400,400
