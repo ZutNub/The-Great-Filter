@@ -5,8 +5,7 @@ using UnityEngine;
 namespace GreatFilter.MapData.Turrets
 {
     [CreateAssetMenu(menuName = "Gamedata/Turrets/Laser")]
-    public class DataTurretLaser : ADataTurret
+    public class DataTurretLaser : ADataTurretPlayer
     {
-        //TODO hiteffect
     }
 }

@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cbfd55b5106b44ab126efb6fb219b1, type: 3}
+  m_Name: Level_01
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: c3f9c4ae904fdff4fbbb411749b77088, type: 2}
+    - {fileID: 11400000, guid: 3799f863c2071e348b0da0d938afc6af, type: 2}
+    - {fileID: 11400000, guid: 72513bd033f967b4dbd4f3ce70e1f240, type: 2}
+    - {fileID: 11400000, guid: 951b204f596b3ff4d86bda53fc88aea8, type: 2}
+    - {fileID: 11400000, guid: 7d35979fb1947fa4aa5c630c87338666, type: 2}
+    - {fileID: 11400000, guid: 48516b92676d5534f97b913162a6447d, type: 2}
+    - {fileID: 11400000, guid: 4067bdef32c5def42819624ec2112d72, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: planets
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[GreatFilter.MapData.DataLevel+PlanetSetup,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.MapData.DataLevel+PlanetSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Planet 0
+    - Name: planet
+      Entry: 10
+      Data: 0
+    - Name: hasParent
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 3
+      Data: 0
+    - Name: distance
+      Entry: 4
+      Data: 655
+    - Name: startRotation
+      Entry: 4
+      Data: 92.7
+    - Name: axisRotation
+      Entry: 4
+      Data: 139.5
+    - Name: oribitalRotation
+      Entry: 4
+      Data: 219.7
+    - Name: populated
+      Entry: 5
+      Data: true
+    - Name: levelEco
+      Entry: 3
+      Data: 1
+    - Name: levelWeapon
+      Entry: 3
+      Data: 1
+    - Name: turrets
+      Entry: 7
+      Data: 1|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GreatFilter.MapData.ADataTurret,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.MapData.DataLevel+PlanetSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Planet 1
+    - Name: planet
+      Entry: 10
+      Data: 2
+    - Name: hasParent
+      Entry: 5
+      Data: true
+    - Name: parent
+      Entry: 3
+      Data: 0
+    - Name: distance
+      Entry: 4
+      Data: 225
+    - Name: startRotation
+      Entry: 4
+      Data: 32.6
+    - Name: axisRotation
+      Entry: 4
+      Data: 115.3
+    - Name: oribitalRotation
+      Entry: 4
+      Data: 162
+    - Name: populated
+      Entry: 5
+      Data: false
+    - Name: levelEco
+      Entry: 3
+      Data: 0
+    - Name: levelWeapon
+      Entry: 3
+      Data: 0
+    - Name: turrets
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.MapData.DataLevel+PlanetSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Planet 2
+    - Name: planet
+      Entry: 10
+      Data: 3
+    - Name: hasParent
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 3
+      Data: 0
+    - Name: distance
+      Entry: 4
+      Data: 244
+    - Name: startRotation
+      Entry: 4
+      Data: 40.1
+    - Name: axisRotation
+      Entry: 4
+      Data: 132
+    - Name: oribitalRotation
+      Entry: 4
+      Data: 109.4
+    - Name: populated
+      Entry: 5
+      Data: true
+    - Name: levelEco
+      Entry: 3
+      Data: 0
+    - Name: levelWeapon
+      Entry: 3
+      Data: 0
+    - Name: turrets
+      Entry: 7
+      Data: 3|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GreatFilter.MapData.ADataTurret,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.MapData.DataLevel+PlanetSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Planet 3
+    - Name: planet
+      Entry: 10
+      Data: 5
+    - Name: hasParent
+      Entry: 5
+      Data: false
+    - Name: parent
+      Entry: 3
+      Data: 0
+    - Name: distance
+      Entry: 4
+      Data: 797
+    - Name: startRotation
+      Entry: 4
+      Data: 230.5
+    - Name: axisRotation
+      Entry: 4
+      Data: 157
+    - Name: oribitalRotation
+      Entry: 4
+      Data: 252.3
+    - Name: populated
+      Entry: 5
+      Data: true
+    - Name: levelEco
+      Entry: 3
+      Data: 0
+    - Name: levelWeapon
+      Entry: 3
+      Data: 0
+    - Name: turrets
+      Entry: 7
+      Data: 4|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GreatFilter.MapData.ADataTurret,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

@@ -8,7 +8,7 @@ namespace GreatFilter.MapData
     public class DataLevel : SerializedScriptableObject
     {
         [ListDrawerSettings(DraggableItems = false, Expanded = false, ShowPaging = true)]
-        [OnValueChanged("UpdateIndices")]  public List<PlanetSetup> planets;
+        [OnValueChanged("UpdateIndices")]  public List<PlanetSetup> planets = new List<PlanetSetup>();
 
         public struct PlanetSetup
         {

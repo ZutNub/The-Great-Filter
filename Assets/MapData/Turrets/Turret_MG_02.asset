@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31fc713cbd5f56c44bfa46f07560bda2, type: 3}
-  m_Name: Turret_Projectile_Test
+  m_Name: Turret_MG_02
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -20,18 +20,27 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    SerializationNodes:
+    - Name: hitEffect
+      Entry: 7
+      Data: 0|GreatFilter.MapData.Turrets.HitEffects.DataDmgEffect, Assembly-CSharp
+    - Name: dmg
+      Entry: 4
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   isInitial: 1
-  metall: 73
-  gas: 62
+  metall: 100
+  gas: 0
   gravium: 0
   platin: 0
   upgrades: []
-  fireRate: 2.47
-  projectileAmmount: 3
-  variance: 4
-  projectileSpeed: 81
+  fireRate: 3
+  projectileAmmount: 1
+  variance: 2
+  projectileSpeed: 35
   isExplosive: 0
-  explosionRange: 0.1
-  explosionDuration: 0.2
+  explosionRange: 0
+  explosionDuration: 0
