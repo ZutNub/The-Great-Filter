@@ -20,7 +20,8 @@ public class AnimationController
     {
         if (animationId < 0 || animationId > animationStates.Count)
         {
-            Debug.LogError("Animation can not be played! Animation Id is out of bounce! AnimationId=" + animationId + ", Animation Count:" + animationStates.Count);
+            Debug.LogError("Animation can not be played! Animation Id is out of bounce! AnimationId=" + 
+                animationId + ", Animation Count:" + animationStates.Count);
         }
         else
         {
