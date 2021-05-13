@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: Heuschrecke_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 499dcfc76fc20cd4999b49b25580ed78, type: 3}
+  atlasFile: {fileID: 4900000, guid: 764fd2455da8f814fad73605caac30c1, type: 3}
   materials:
-  - {fileID: 2100000, guid: 9ce7f5160599c374c842694c3a62f79c, type: 2}
+  - {fileID: 2100000, guid: 150c23c4ba6d65249823f1224486251b, type: 2}
+  - {fileID: 2100000, guid: 72b5a6b566536d741a66d7f9d9ec0fcc, type: 2}
+  - {fileID: 2100000, guid: 438817e2cd942a34daaaf99e707d56ef, type: 2}

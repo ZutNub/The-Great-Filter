@@ -11,49 +11,68 @@ public class Enemy : MonoBehaviour, ITargetable
     [SerializeField]
     private float movementSpeed = 1f;
 
+    [SerializeField]
+    private float rotationTreshhold = 15;
+
+    [SerializeField]
+    private float rotationSpeed = 1f;
+
+    [SerializeField]
+    private float rotationOffset = 180;
+
+    private bool isRotating = false;
+
     private int _health;
 
     private void Start()
     {
-        Stack<Vector2Int> points = new Stack<Vector2Int>();
-        points.Push(new Vector2Int(1, 2));
-        points.Push(new Vector2Int(7, 0));
-        points.Push(new Vector2Int(-10, -2));
-        points.Push(new Vector2Int(1, 4));
-        points.Push(new Vector2Int(6, 8));
-        points.Push(new Vector2Int(-7, -2));
-        points.Push(new Vector2Int(5, 2));
+        Stack<Vector3Int> points = new Stack<Vector3Int>();
+        points.Push(new Vector3Int(0, 4, 0));
+        points.Push(new Vector3Int(0, -4, 0));
+        points.Push(new Vector3Int(-10, -2, 0));
+        points.Push(new Vector3Int(1, 4, 0));
+        points.Push(new Vector3Int(6, 8, 0));
+        points.Push(new Vector3Int(-7, -2, 0));
+        points.Push(new Vector3Int(5, 2, 0));
 
         path = new Path(points);
     }
 
     private void Update()
     {
-        Move();
-    }
-
-    public int Health
-    {
-        get { return _health; }
-        private set
+        if (!isRotating)
         {
-            _health = value;
-            if (_health < 0)
-            {
-                _health = 0;
-            }
+            Move();
         }
+        Rotate(path.CurrentPoint);
     }
 
     public void Move()
     {
-        Vector2 pos = transform.position;
-        if (Vector2.Distance(pos, path.CurrentPoint) <= distanceTreshhold)
+        if (Vector3.Distance(transform.position, path.CurrentPoint) <= distanceTreshhold)
         {
             path.NextPoint();
         }
-        Vector3 nextPoint = new Vector3(path.CurrentPoint.x - pos.x, path.CurrentPoint.y - pos.y, 0);
-        transform.Translate(nextPoint.normalized * Time.deltaTime * movementSpeed);
+
+        transform.position = Vector3.MoveTowards(transform.position, path.CurrentPoint, movementSpeed * Time.deltaTime);
+    }
+
+    public void Rotate(Vector3 target)
+    {
+        Vector3 dir = target - transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - rotationOffset;
+
+        Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(rotation.eulerAngles, transform.rotation.eulerAngles) <= rotationTreshhold)
+        {
+            isRotating = false;
+        }
+        else
+        {
+            isRotating = true;
+        }
     }
 
     public void TakeDamage(int damage)
@@ -79,5 +98,18 @@ public class Enemy : MonoBehaviour, ITargetable
     {
         //TODO
         //Play dying animation, make dying sound, trigger point score/ wincondition
+    }
+
+    public int Health
+    {
+        get { return _health; }
+        private set
+        {
+            _health = value;
+            if (_health < 0)
+            {
+                _health = 0;
+            }
+        }
     }
 }
