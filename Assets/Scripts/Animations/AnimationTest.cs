@@ -30,11 +30,11 @@ public class AnimationTest : MonoBehaviour
     {
         if (health > 0)
         {
-            animationController.SwitchState(0, true, 1);
+            animationController.SwitchState(0, true, 1, 0);
         }
         else
         {
-            animationController.SwitchState(1, false, 1);
+            animationController.SwitchState(1, false, 1, 0);
         }
     }
 }

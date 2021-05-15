@@ -16,7 +16,7 @@ public class AnimationController
         this.animationStates = animationStates;
     }
 
-    public void SwitchState(int animationId, bool loop, float timeScale)
+    public void SwitchState(int animationId, bool loop, float timeScale, int track)
     {
         if (animationId < 0 || animationId > animationStates.Count)
         {
@@ -27,7 +27,7 @@ public class AnimationController
         {
             if (animationId != currentState)
             {
-                skeletonAnimation.state.SetAnimation(0, animationStates[animationId], loop).TimeScale = timeScale;
+                skeletonAnimation.state.SetAnimation(track, animationStates[animationId], loop).TimeScale = timeScale;
                 currentState = animationId;
             }
         }

@@ -20,41 +20,78 @@ public class Enemy : MonoBehaviour, ITargetable
     [SerializeField]
     private float rotationOffset = 180;
 
+    [SerializeField]
+    private float attackCooldown = 3;
+
+    [SerializeField]
+    private int attackDamage = 10;
+
+    private float cooldown = 0;
+
     private bool isRotating = false;
+    private bool isCirclingTarget = false;
 
     private int _health;
 
+    private Point currentPoint;
+
     private void Start()
     {
-        Stack<Vector3Int> points = new Stack<Vector3Int>();
-        points.Push(new Vector3Int(0, 4, 0));
-        points.Push(new Vector3Int(0, -4, 0));
-        points.Push(new Vector3Int(-10, -2, 0));
-        points.Push(new Vector3Int(1, 4, 0));
-        points.Push(new Vector3Int(6, 8, 0));
-        points.Push(new Vector3Int(-7, -2, 0));
-        points.Push(new Vector3Int(5, 2, 0));
+        List<Vector3> points = new List<Vector3>();
+        points.Add(new Vector3(0, -6, 0));
+        points.Add(new Vector3(-6, 0, 0));
+        points.Add(new Vector3(0, 6, 0));
+        points.Add(new Vector3(6, 0, 0));
 
         path = new Path(points);
+
+        //TODO Delete everything above later
+        currentPoint = path.getFirstPoint();
+        cooldown = attackCooldown;
     }
 
     private void Update()
     {
-        if (!isRotating)
+        if (!isCirclingTarget)
+        {
+            if (!isRotating)
+            {
+                Move();
+            }
+            Rotate(currentPoint.Value);
+        }
+        else 
         {
             Move();
+            //TODO
+            //Rotate(path.Target.getPosition());
+            Rotate(Vector3.zero);
         }
-        Rotate(path.CurrentPoint);
+        cooldown -= Time.deltaTime;
+        if (isCirclingTarget && cooldown <= 0) 
+        {
+            AttackTarget();
+            cooldown = attackCooldown;
+        }
     }
 
     public void Move()
     {
-        if (Vector3.Distance(transform.position, path.CurrentPoint) <= distanceTreshhold)
+        if (Vector3.Distance(transform.position, currentPoint.Value) <= distanceTreshhold)
         {
-            path.NextPoint();
+            if (!isCirclingTarget && currentPoint.Equals(path.getLastPoint()))
+            {
+                isCirclingTarget = true;
+                path = new Path(OrbitCalculator.calculateSinOverCircle(Vector3.zero), true);
+                currentPoint = path.getFirstPoint();
+            }
+            else 
+            {
+                currentPoint = currentPoint.Next;
+            }
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, path.CurrentPoint, movementSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, currentPoint.Value, movementSpeed * Time.deltaTime);
     }
 
     public void Rotate(Vector3 target)
@@ -73,6 +110,8 @@ public class Enemy : MonoBehaviour, ITargetable
         {
             isRotating = true;
         }
+        //TODO
+        //Rotate Turret
     }
 
     public void TakeDamage(int damage)
@@ -86,6 +125,13 @@ public class Enemy : MonoBehaviour, ITargetable
         {
             OnDeath();
         }
+    }
+
+    public void AttackTarget()
+    {
+        //path.Target.TakeDamage(attackDamage);
+        //TODO
+        //Turret animation
     }
 
     public void OnDamageTaken()
@@ -111,5 +157,10 @@ public class Enemy : MonoBehaviour, ITargetable
                 _health = 0;
             }
         }
+    }
+
+    public Vector3 getPosition()
+    {
+        return transform.position;
     }
 }

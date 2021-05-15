@@ -11,4 +11,6 @@ public interface ITargetable
     void OnDamageTaken();
 
     void OnDeath();
+
+    Vector3 getPosition();
 }
