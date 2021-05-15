@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Heuschrecke_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 21bf3334ac34a1047a35e1adf76a1b87, type: 2}
+  - {fileID: 11400000, guid: 73c9f1bdc27899144a7f852ce3e1c3d9, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: ca35ac2ad6821124aa8abe4213872735, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: b85986664025a4a45abf98d94f671d13, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

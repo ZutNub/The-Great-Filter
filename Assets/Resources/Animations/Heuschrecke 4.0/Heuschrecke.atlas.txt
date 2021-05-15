@@ -1,0 +1,192 @@
+Heuschrecke.png
+size:2035,1877
+filter:Linear,Linear
+pma:true
+BodyPlate_Big_Mid 1
+bounds:932,1709,111,141
+rotate:90
+BodyPlate_Bot 1
+bounds:1954,1797,78,79
+rotate:90
+BodyPlate_Mid 2
+bounds:2,1786,72,117
+rotate:90
+BodyPlate_Top 1
+bounds:121,1776,78,79
+rotate:90
+Body_Background 1
+bounds:1075,1610,232,209
+Enemy Blood/Blood_0
+bounds:1309,1413,400,400
+Enemy Blood/Blood_1
+bounds:2,1333,400,400
+Enemy Blood/Blood_10
+bounds:404,1323,400,400
+Enemy Blood/Blood_11
+bounds:806,1208,400,400
+Enemy Blood/Blood_12
+bounds:1208,1011,400,400
+Enemy Blood/Blood_13
+bounds:1610,1011,400,400
+Enemy Blood/Blood_14
+bounds:2,931,400,400
+Enemy Blood/Blood_15
+bounds:404,921,400,400
+Enemy Blood/Blood_16
+bounds:806,806,400,400
+Enemy Blood/Blood_17
+bounds:1208,609,400,400
+Enemy Blood/Blood_18
+bounds:1610,609,400,400
+Enemy Blood/Blood_19
+bounds:2,529,400,400
+Enemy Blood/Blood_2
+bounds:404,519,400,400
+Enemy Blood/Blood_20
+bounds:806,404,400,400
+Enemy Blood/Blood_21
+bounds:1208,207,400,400
+Enemy Blood/Blood_22
+bounds:1610,207,400,400
+Enemy Blood/Blood_23
+bounds:2,127,400,400
+Enemy Blood/Blood_24
+bounds:404,117,400,400
+Enemy Blood/Blood_25
+bounds:806,2,400,400
+EyeBase_Bot_1
+bounds:1265,1821,71,54
+EyeBase_Mid 1
+bounds:1813,1810,65,70
+rotate:90
+EyeBase_Top_1
+bounds:1338,1821,71,54
+Eyelid_Bot_1
+bounds:485,1829,58,46
+Eyelid_Mid_1
+bounds:881,1824,51,62
+rotate:90
+Eyelid_Top_1
+bounds:545,1829,58,46
+Iris_Bot_1
+bounds:414,1730,257,97
+Iris_Mid_1
+bounds:605,1829,274,46
+Iris_Top_1
+bounds:673,1725,257,97
+TentacleCase_Bot_1
+bounds:202,1754,104,94
+TentacleCase_Top_1
+bounds:308,1735,104,94
+Tentacle_Bot 2
+bounds:945,1822,158,53
+Tentacle_Medium_Bot 1
+bounds:1527,1815,141,60
+Tentacle_Medium_Top 1
+bounds:1670,1815,141,60
+Tentacle_Top 2
+bounds:1105,1822,158,53
+ToothCase_Bot 1
+bounds:357,1831,44,62
+rotate:90
+ToothCase_Mid 1
+bounds:233,1853,22,54
+rotate:90
+ToothCase_Top 1
+bounds:421,1831,44,62
+rotate:90
+Tooth_Bot 1
+bounds:1411,1819,56,56
+Tooth_Bot_2
+bounds:171,1856,29,19
+Tooth_Mid 1
+bounds:144,1859,25,16
+Tooth_Top_2
+bounds:202,1856,29,19
+Tooth_top 1
+bounds:1469,1819,56,56
+Turret_BarrelCase_Bot 1
+bounds:289,1850,32,25
+Turret_BarrelCase_Top 1
+bounds:323,1850,32,25
+Turret_Barrel_Bot 1
+bounds:73,1860,69,15
+Turret_Barrel_Bot 1 #1
+bounds:2,1860,69,15
+Turret_Base_Mid 1
+bounds:1885,1810,65,67
+rotate:90
+
+Heuschrecke_2.png
+size:2012,2012
+filter:Linear,Linear
+pma:true
+Enemy Blood/Blood_26
+bounds:2,1610,400,400
+Enemy Blood/Blood_27
+bounds:2,1208,400,400
+Enemy Blood/Blood_28
+bounds:404,1610,400,400
+Enemy Blood/Blood_29
+bounds:2,806,400,400
+Enemy Blood/Blood_3
+bounds:404,1208,400,400
+Enemy Blood/Blood_30
+bounds:806,1610,400,400
+Enemy Blood/Blood_31
+bounds:2,404,400,400
+Enemy Blood/Blood_32
+bounds:404,806,400,400
+Enemy Blood/Blood_33
+bounds:806,1208,400,400
+Enemy Blood/Blood_34
+bounds:1208,1610,400,400
+Enemy Blood/Blood_35
+bounds:2,2,400,400
+Enemy Blood/Blood_36
+bounds:404,404,400,400
+Enemy Blood/Blood_37
+bounds:806,806,400,400
+Enemy Blood/Blood_38
+bounds:1208,1208,400,400
+Enemy Blood/Blood_39
+bounds:1610,1610,400,400
+Enemy Blood/Blood_4
+bounds:404,2,400,400
+Enemy Blood/Blood_40
+bounds:806,404,400,400
+Enemy Blood/Blood_41
+bounds:1208,806,400,400
+Enemy Blood/Blood_42
+bounds:1610,1208,400,400
+Enemy Blood/Blood_43
+bounds:806,2,400,400
+Enemy Blood/Blood_44
+bounds:1208,404,400,400
+Enemy Blood/Blood_45
+bounds:1610,806,400,400
+Enemy Blood/Blood_46
+bounds:1208,2,400,400
+Enemy Blood/Blood_47
+bounds:1610,404,400,400
+Enemy Blood/Blood_48
+bounds:1610,2,400,400
+
+Heuschrecke_3.png
+size:1610,806
+filter:Linear,Linear
+pma:true
+Enemy Blood/Blood_49
+bounds:2,404,400,400
+Enemy Blood/Blood_5
+bounds:2,2,400,400
+Enemy Blood/Blood_50
+bounds:404,404,400,400
+Enemy Blood/Blood_6
+bounds:404,2,400,400
+Enemy Blood/Blood_7
+bounds:806,404,400,400
+Enemy Blood/Blood_8
+bounds:1208,404,400,400
+Enemy Blood/Blood_9
+bounds:806,2,400,400
