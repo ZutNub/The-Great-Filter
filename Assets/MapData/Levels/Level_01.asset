@@ -288,3 +288,21 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: waves
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[GreatFilter.MapData.DataLevel+WaveSetup,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  hp: 0
+  metall: 0
+  gas: 0
+  gravium: 0
+  platin: 0

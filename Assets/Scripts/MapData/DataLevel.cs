@@ -8,7 +8,13 @@ namespace GreatFilter.MapData
     public class DataLevel : SerializedScriptableObject
     {
         [ListDrawerSettings(DraggableItems = false, Expanded = false, ShowPaging = true)]
-        [OnValueChanged("UpdateIndices")]  public List<PlanetSetup> planets = new List<PlanetSetup>();
+        [OnValueChanged("UpdateIndicesPlanets")]  public List<PlanetSetup> planets = new List<PlanetSetup>();
+
+        [FoldoutGroup("Start Conditions")] [VerticalGroup("Start Conditions/Conditions")] [LabelWidth(50)]  public int hp;
+        [HorizontalGroup("Start Conditions/Conditions/Resources")] [LabelWidth(50)] public int metall, gas, gravium, platin;
+
+        [ListDrawerSettings(DraggableItems = false, Expanded = false, ShowPaging = true)]
+        [OnValueChanged("UpdateIndicesWaves")] public List<WaveSetup> waves = new List<WaveSetup>();
 
         public struct PlanetSetup
         {
@@ -22,15 +28,19 @@ namespace GreatFilter.MapData
             [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float startRotation;
             [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float axisRotation;
             [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float oribitalRotation;
-            [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] public bool populated;
+            [ShowIf("@!(planet is DataPlanetEnvironment)")] [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] public bool populated;
 
             [ShowIf("populated")] [HorizontalGroup("$name/Planet Settings/Upgrades", 0.5f)] [LabelWidth(100)] [LabelText("Level Eco")] [PropertyRange(0,"GetRangeEco")] public int levelEco;
             [ShowIf("populated")] [HorizontalGroup("$name/Planet Settings/Upgrades", 0.5f)] [LabelWidth(100)] [LabelText("Level Weapon")] [PropertyRange(0, "GetRangeWeapon")] public int levelWeapon;
 
-            [ValidateInput("TestDictionaryKeys","A key is higher then the maximal turret slots!")][ShowIf("populated")] [VerticalGroup("$name/Planet Settings")] [DictionaryDrawerSettings(DisplayMode = DictionaryDisplayOptions.ExpandedFoldout)] public Dictionary<int,ADataTurret> turrets;
+            [ValidateInput("TestDictionaryKeys","A key is higher then the maximal turret slots!")][ShowIf("populated")] [VerticalGroup("$name/Planet Settings/turrets")] [DictionaryDrawerSettings(DisplayMode = DictionaryDisplayOptions.ExpandedFoldout,KeyLabel = "position",ValueLabel ="turret")] public Dictionary<int,ADataTurret> turrets;
 
             private bool TestDictionaryKeys()
             {
+                if(turrets == null)
+                {
+                    return true;
+                }
                 foreach(int key in turrets.Keys)
                 {
                     if( key >= planet.turretSlots)
@@ -62,11 +72,32 @@ namespace GreatFilter.MapData
             }
         }
 
-        private void UpdateIndices()
+        public struct WaveSetup
+        {
+            [HideInInspector] public string name;
+            private int waveCount;
+
+            [LabelText("$name")]public Dictionary<int, ADataEnemy> enemies;
+
+            public WaveSetup(WaveSetup old, string name, int waveCount)
+            {
+                this = old;
+                this.name = name;
+                this.waveCount = waveCount;
+            }
+        }
+        private void UpdateIndicesPlanets()
         {
             for(int i=0; i<planets.Count; i++)
             {
                 planets[i] = new PlanetSetup(planets[i], "Planet "+i, planets.Count);
+            }
+        }
+        private void UpdateIndicesWaves()
+        {
+            for (int i = 0; i < waves.Count; i++)
+            {
+                waves[i] = new WaveSetup(waves[i], "Wave " + i, waves.Count);
             }
         }
     }
