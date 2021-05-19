@@ -3,49 +3,68 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, ITargetable
 {
-    private Path path;
+    protected Path path;
+    protected EnemyAnimator animator;
 
     [SerializeField]
-    private float distanceTreshhold = 0.2f;
+    protected float distanceTreshhold = 0.2f;
 
     [SerializeField]
-    private float movementSpeed = 1f;
+    protected float movementSpeed = 1f;
 
     [SerializeField]
-    private float rotationTreshhold = 15;
+    protected float rotationTreshhold = 15;
 
     [SerializeField]
-    private float rotationSpeed = 1f;
+    protected float rotationSpeed = 1f;
 
     [SerializeField]
-    private float rotationOffset = 180;
+    protected float rotationOffset = 180;
 
     [SerializeField]
-    private float attackCooldown = 3;
+    protected float attackCooldown = 3;
 
     [SerializeField]
-    private int attackDamage = 10;
+    protected int attackDamage = 10;
 
-    private float cooldown = 0;
+    [SerializeField]
+    protected int _health;
 
-    private bool isRotating = false;
-    private bool isCirclingTarget = false;
+    public int Health
+    {
+        get { return _health; }
+        private set
+        {
+            _health = value;
+            if (_health < 0)
+            {
+                _health = 0;
+            }
+        }
+    }
 
-    private int _health;
+    protected float cooldown = 0;
 
-    private Point currentPoint;
+    protected bool isRotating = false;
+    protected bool isCirclingTarget = false;
+
+    protected Point currentPoint;
 
     private void Start()
     {
         List<Vector3> points = new List<Vector3>();
-        points.Add(new Vector3(0, -6, 0));
-        points.Add(new Vector3(-6, 0, 0));
-        points.Add(new Vector3(0, 6, 0));
-        points.Add(new Vector3(6, 0, 0));
-
-        path = new Path(points);
+        points.Add(new Vector3(0, -10, 0));
+        points.Add(new Vector3(-10, 0, 0));
+        points.Add(new Vector3(0, 10, 0));
+        points.Add(new Vector3(10, 0, 0));
+        GameObject target = GameObject.Find("Mutterschiff");
+        ITargetable taget2 = target.GetComponent<Enemy>();
+        path = new Path(points, taget2);
 
         //TODO Delete everything above later
+        animator = GetComponent<EnemyAnimator>();
+        animator.Init();
+        animator.PlayIdleAnimation();
         currentPoint = path.getFirstPoint();
         cooldown = attackCooldown;
     }
@@ -60,15 +79,13 @@ public class Enemy : MonoBehaviour, ITargetable
             }
             Rotate(currentPoint.Value);
         }
-        else 
+        else
         {
             Move();
-            //TODO
-            //Rotate(path.Target.getPosition());
-            Rotate(Vector3.zero);
+            Rotate(path.Target.getPosition());
         }
         cooldown -= Time.deltaTime;
-        if (isCirclingTarget && cooldown <= 0) 
+        if (isCirclingTarget && cooldown <= 0)
         {
             AttackTarget();
             cooldown = attackCooldown;
@@ -79,13 +96,14 @@ public class Enemy : MonoBehaviour, ITargetable
     {
         if (Vector3.Distance(transform.position, currentPoint.Value) <= distanceTreshhold)
         {
-            if (!isCirclingTarget && currentPoint.Equals(path.getLastPoint()))
+            if (!isCirclingTarget && currentPoint.Equals(path.getLastPoint()) && path.Target != null)
             {
+                Debug.Log("Circling Target " + path.Target.getPosition());
                 isCirclingTarget = true;
-                path = new Path(OrbitCalculator.calculateSinOverCircle(Vector3.zero), true);
+                path = new Path(OrbitCalculator.calculateSinOverCircle(path.Target.getPosition()), path.Target, true);
                 currentPoint = path.getFirstPoint();
             }
-            else 
+            else
             {
                 currentPoint = currentPoint.Next;
             }
@@ -116,20 +134,26 @@ public class Enemy : MonoBehaviour, ITargetable
 
     public void TakeDamage(int damage)
     {
-        Health -= damage;
         if (Health > 0)
         {
-            OnDamageTaken();
-        }
-        else
-        {
-            OnDeath();
+            Health -= damage;
+            if (Health > 0)
+            {
+                OnDamageTaken();
+            }
+            else
+            {
+                OnDeath();
+            }
         }
     }
 
     public void AttackTarget()
     {
-        //path.Target.TakeDamage(attackDamage);
+        if (path.Target != null)
+        {
+            path.Target.TakeDamage(attackDamage);
+        }
         //TODO
         //Turret animation
     }
@@ -142,21 +166,9 @@ public class Enemy : MonoBehaviour, ITargetable
 
     public void OnDeath()
     {
+        animator.PlayDeathAnimation();
         //TODO
         //Play dying animation, make dying sound, trigger point score/ wincondition
-    }
-
-    public int Health
-    {
-        get { return _health; }
-        private set
-        {
-            _health = value;
-            if (_health < 0)
-            {
-                _health = 0;
-            }
-        }
     }
 
     public Vector3 getPosition()
