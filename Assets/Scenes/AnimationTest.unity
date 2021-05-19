@@ -606,6 +606,8 @@ MonoBehaviour:
   rotationTreshhold: 15
   rotationSpeed: 4
   rotationOffset: 180
+  attackCooldown: 3
+  attackDamage: 10
 --- !u!114 &1440508463
 MonoBehaviour:
   m_ObjectHideFlags: 0
