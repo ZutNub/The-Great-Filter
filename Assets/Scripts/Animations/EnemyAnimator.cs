@@ -2,7 +2,7 @@ using Spine.Unity;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationTest : MonoBehaviour
+public class EnemyAnimator : MonoBehaviour
 {
     [SerializeField]
     private SkeletonAnimation skeletonAnimation;
@@ -15,26 +15,21 @@ public class AnimationTest : MonoBehaviour
 
     private AnimationController animationController;
 
-    public int health = 100;
-
     // Start is called before the first frame update
-    private void Start()
+    public void Init()
     {
         List<AnimationReferenceAsset> animationStates = new List<AnimationReferenceAsset> { idle, death };
 
         animationController = new AnimationController(skeletonAnimation, animationStates);
     }
 
-    // Update is called once per frame
-    private void Update()
+    public void PlayIdleAnimation()
     {
-        if (health > 0)
-        {
-            animationController.SwitchState(0, true, 1);
-        }
-        else
-        {
-            animationController.SwitchState(1, false, 1);
-        }
+        animationController.SwitchState(0, true, 1, 0, 0, false);
+    }
+
+    public void PlayDeathAnimation()
+    {
+        animationController.SwitchState(1, false, 1, 0, 0, false);
     }
 }

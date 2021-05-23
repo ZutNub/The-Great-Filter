@@ -16,19 +16,18 @@ public class AnimationController
         this.animationStates = animationStates;
     }
 
-    public void SwitchState(int animationId, bool loop, float timeScale)
+    public void SwitchState(int animationId, bool loop, float timeScale, int track, float delay, bool overrideAnimation)
     {
         if (animationId < 0 || animationId > animationStates.Count)
         {
-            Debug.LogError("Animation can not be played! Animation Id is out of bounce! AnimationId=" + 
+            Debug.LogError("Animation can not be played! Animation Id is out of bounce! AnimationId=" +
                 animationId + ", Animation Count:" + animationStates.Count);
         }
         else
         {
-            if (animationId != currentState)
+            if (overrideAnimation || currentState != animationId)
             {
-                skeletonAnimation.state.SetAnimation(0, animationStates[animationId], loop).TimeScale = timeScale;
-                currentState = animationId;
+                skeletonAnimation.state.AddAnimation(track, animationStates[animationId], loop, delay).TimeScale = timeScale;
             }
         }
     }
