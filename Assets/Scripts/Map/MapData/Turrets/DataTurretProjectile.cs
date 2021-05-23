@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 
 //affected by gravity
-namespace GreatFilter.MapData.Turrets
+namespace GreatFilter.Map.MapData.Turrets
 {
     [CreateAssetMenu(menuName = "Gamedata/Turrets/Projectile")]
     public class DataTurretProjectile : ADataTurretPlayer

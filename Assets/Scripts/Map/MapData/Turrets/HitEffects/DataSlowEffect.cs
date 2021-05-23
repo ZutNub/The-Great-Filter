@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace GreatFilter.MapData.Turrets.HitEffects
+namespace GreatFilter.Map.MapData.Turrets.HitEffects
 {
     [Serializable]
     public class DataSlowEffect : ADataHitEffect

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GreatFilter.MapData.Planets
+namespace GreatFilter.Map.MapData.Planets
 {
     [CreateAssetMenu(menuName = "Gamedata/Planets/Hostile")]
     public class DataPlanetHostile : ADataPlanet

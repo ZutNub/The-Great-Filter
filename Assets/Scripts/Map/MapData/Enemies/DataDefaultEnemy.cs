@@ -1,8 +1,9 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GreatFilter.MapData.Enemies
+namespace GreatFilter.Map.MapData.Enemies
 {
+    [CreateAssetMenu(menuName = "Gamedata/Enemy/Default")]
     public class DataDefaultEnemy : ADataEnemy
     {
         [HorizontalGroup("Enemy", 80)] [PreviewField(80)] [HideLabel] public Sprite sprite;

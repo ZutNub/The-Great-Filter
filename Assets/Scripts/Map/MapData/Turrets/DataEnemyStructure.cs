@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GreatFilter.MapData.Turrets
+namespace GreatFilter.Map.MapData.Turrets
 {
     public enum EnemyStructureType { Spawner, Waypoint, Decoration}
    

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GreatFilter.MapData
+namespace GreatFilter.Map.MapData
 {
     [CreateAssetMenu(menuName = "Gamedata/Environment")]
     public class DataEnvironment : ScriptableObject
