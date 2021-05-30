@@ -9,8 +9,22 @@ public class OrbitCalculator
 
         for (float i = 0; i < 2 * Mathf.PI; i += stepsize)
         {
-            float x = (radius + amplitude * Mathf.Sin(cycles * i + phaseShift)) * Mathf.Cos(i);
-            float y = (radius + amplitude * Mathf.Sin(cycles * i + phaseShift)) * Mathf.Sin(i);
+            float x = (radius + amplitude * Mathf.Sin(cycles * i + phaseShift)) * Mathf.Cos(i) + origin.x;
+            float y = (radius + amplitude * Mathf.Sin(cycles * i + phaseShift)) * Mathf.Sin(i) + origin.y;
+            points.Add(new Vector3(x, y, 0));
+        }
+
+        return points;
+    }
+
+    public static List<Vector3> calculateEllipse(Vector3 origin, float scaleX = 5, float scaleY = 8, float phaseShiftX = 0, float phaseShiftY = 0, float stepsize = 2)
+    {
+        List<Vector3> points = new List<Vector3>();
+
+        for (float i = 0; i < 360; i += stepsize)
+        {
+            float x = scaleX * Mathf.Cos(i + phaseShiftX) + origin.x;
+            float y = scaleY * Mathf.Sin(i + phaseShiftY) + origin.y;
             points.Add(new Vector3(x, y, 0));
         }
 
