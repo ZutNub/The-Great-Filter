@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Planet_BlackHole
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  mass: 100
-  size: 10
-  turretSlots: 2
+  mass: 1000
+  size: 15
+  turretSlots: 3

@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GreatFilter.MapData
+namespace GreatFilter.Map.MapData
 {
     [CreateAssetMenu(menuName = "Gamedata/Level")]
     public class DataLevel : SerializedScriptableObject
@@ -77,14 +77,23 @@ namespace GreatFilter.MapData
             [HideInInspector] public string name;
             private int waveCount;
 
-            [LabelText("$name")]public Dictionary<int, ADataEnemy> enemies;
+            [LabelText("$name")] public List<WaveEntry> spawns;
 
             public WaveSetup(WaveSetup old, string name, int waveCount)
             {
                 this = old;
                 this.name = name;
                 this.waveCount = waveCount;
+                spawns = new List<WaveEntry>();
             }
+        }
+
+        public struct WaveEntry
+        {
+            public ADataEnemy enemy;
+            [Range(0,1000)] public int startDelay;
+            [Range(1,50)]public int iterations;
+            [ShowIf("@(iterations > 1)")] [Range(1,500)]public int iterationDelay;
         }
         private void UpdateIndicesPlanets()
         {

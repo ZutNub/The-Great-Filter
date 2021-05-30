@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GreatFilter.MapData
+namespace GreatFilter.Map.MapData
 {
     public enum PlanetResources {None, Metall, Gas, Gravium, Platin}
     [InlineEditor]

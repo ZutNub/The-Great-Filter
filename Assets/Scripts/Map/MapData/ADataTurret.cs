@@ -1,9 +1,9 @@
-using GreatFilter.MapData.Turrets;
-using GreatFilter.MapData.Turrets.HitEffects;
+using GreatFilter.Map.MapData.Turrets;
+using GreatFilter.Map.MapData.Turrets.HitEffects;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GreatFilter.MapData
+namespace GreatFilter.Map.MapData
 {
     [InlineEditor]
     public abstract class ADataTurret : SerializedScriptableObject

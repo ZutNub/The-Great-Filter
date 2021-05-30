@@ -1,6 +1,6 @@
 using System;
 
-namespace GreatFilter.MapData.Turrets.HitEffects
+namespace GreatFilter.Map.MapData.Turrets.HitEffects
 {
     [Serializable]
     public class DataDmgEffect : ADataHitEffect

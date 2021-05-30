@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector;
 using System;
 
-namespace GreatFilter.MapData.Turrets
+namespace GreatFilter.Map.MapData.Turrets
 {
     [Serializable]
     public abstract class ADataHitEffect

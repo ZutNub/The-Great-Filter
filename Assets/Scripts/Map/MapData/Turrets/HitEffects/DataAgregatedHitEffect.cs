@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace GreatFilter.MapData.Turrets.HitEffects
+namespace GreatFilter.Map.MapData.Turrets.HitEffects
 {
     public class DataAgregatedHitEffect : ADataHitEffect
     {

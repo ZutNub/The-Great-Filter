@@ -1,11 +1,11 @@
-using GreatFilter.MapData.Turrets;
-using GreatFilter.MapData.Turrets.HitEffects;
+using GreatFilter.Map.MapData.Turrets;
+using GreatFilter.Map.MapData.Turrets.HitEffects;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GreatFilter.MapData
+namespace GreatFilter.Map.MapData
 {
     public abstract class ADataTurretPlayer : ADataTurret
     {
