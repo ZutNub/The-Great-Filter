@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Dyson Sphere D20(Photoshop)_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 73ca8d2e3753fc746a5a32db4d3fcdb9, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 657913db7a11a37479b98efce898880c, type: 2}
+  - {fileID: 2100000, guid: 156fb898aea3b874f89fa6bcadf4a212, type: 2}
+  - {fileID: 2100000, guid: 0f7dcb4be4fbcc24dbc43f2ad0726229, type: 2}
+  - {fileID: 2100000, guid: f26fa950ca5972f45a352dcd3df8a178, type: 2}
+  - {fileID: 2100000, guid: 10fead03b087075458442bc4c892fc7f, type: 2}
+  - {fileID: 2100000, guid: 7e2f3ba0d6c144e45b1970b1648c29e8, type: 2}

@@ -1,0 +1,70 @@
+Dyson Sphere D20(Photoshop).png
+size:2801,2782
+filter:Linear,Linear
+pma:true
+Bottom Left_1
+bounds:775,1495,759,595
+Bottom Right_1
+bounds:1536,1304,759,595
+Mid Bottom_1
+bounds:2,894,1027,599
+Mid Left_1
+bounds:2,2092,266,896
+rotate:90
+Mid Left_2
+bounds:1031,531,771,883
+rotate:90
+Mid Right_1
+bounds:900,2092,266,896
+rotate:90
+Mid Right_2
+bounds:1916,531,771,883
+rotate:90
+Mid_1
+bounds:2,2,1024,890
+Ring_1 Background
+bounds:2,2360,2674,234
+Ring_1 Forground
+bounds:2,2596,2673,184
+Top Left_1
+bounds:1798,1901,771,457
+Top Right_1
+bounds:2,1633,771,457
+
+Dyson Sphere D20(Photoshop)_2.png
+size:1645,1645
+filter:Linear,Linear
+pma:true
+Sun
+bounds:2,2,1641,1641
+
+Dyson Sphere D20(Photoshop)_3.png
+size:2279,1903
+filter:Linear,Linear
+pma:true
+Ring_2 Background
+bounds:2,2,1899,2275
+rotate:90
+
+Dyson Sphere D20(Photoshop)_4.png
+size:2321,1963
+filter:Linear,Linear
+pma:true
+Ring_2 Forground
+bounds:2,2,1959,2317
+rotate:90
+
+Dyson Sphere D20(Photoshop)_5.png
+size:2671,2257
+filter:Linear,Linear
+pma:true
+Ring_3 Background
+bounds:2,2,2253,2667
+rotate:90
+
+Dyson Sphere D20(Photoshop)_6.png
+size:2312,2719
+filter:Linear,Linear
+pma:true
+Ring_3 Forground
+bounds:2,2,2308,2715

@@ -15,7 +15,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 5f7df93d0ff9bc24b9604615319c7524, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -35,8 +36,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: planet
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: hasParent
       Entry: 5
       Data: false
@@ -45,7 +46,7 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 0
+      Data: 1000
     - Name: startRotation
       Entry: 4
       Data: 0
@@ -250,7 +251,73 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.Map.MapData.DataLevel+WaveSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Wave 0
+    - Name: spawns
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
       Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.Map.MapData.DataLevel+WaveSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Wave 1
+    - Name: spawns
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GreatFilter.Map.MapData.DataLevel+WaveSetup, Assembly-CSharp
+    - Name: name
+      Entry: 1
+      Data: Wave 2
+    - Name: spawns
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
