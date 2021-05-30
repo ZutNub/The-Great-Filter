@@ -98,7 +98,6 @@ public class Enemy : MonoBehaviour, ITargetable
         {
             if (!isCirclingTarget && currentPoint.Equals(path.getLastPoint()) && path.Target != null)
             {
-                Debug.Log("Circling Target " + path.Target.getPosition());
                 isCirclingTarget = true;
                 path = new Path(OrbitCalculator.calculateSinOverCircle(path.Target.getPosition()), path.Target, true);
                 currentPoint = path.getFirstPoint();
