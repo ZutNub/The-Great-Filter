@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class OrbitCalculator
 {
-    public static List<Vector3> calculateSinOverCircle(Vector3 origin, float radius = 8, float amplitude = 1, float cycles = 10, float phaseShift = 0, float stepsize = 0.05f)
+    public static List<Vector3> CalculateSinOverCircle(Vector3 origin, float radius = 8, float amplitude = 1, float cycles = 10, float phaseShift = 0, float stepsize = 0.05f)
     {
         List<Vector3> points = new List<Vector3>();
 
@@ -17,11 +17,11 @@ public class OrbitCalculator
         return points;
     }
 
-    public static List<Vector3> calculateEllipse(Vector3 origin, float scaleX = 5, float scaleY = 8, float phaseShiftX = 0, float phaseShiftY = 0, float stepsize = 2)
+    public static List<Vector3> CalculateEllipse(Vector3 origin, float scaleX = 5, float scaleY = 8, float phaseShiftX = 0, float phaseShiftY = 0, float stepsize = 0.05f)
     {
         List<Vector3> points = new List<Vector3>();
 
-        for (float i = 0; i < 360; i += stepsize)
+        for (float i = 0; i < 2 * Mathf.PI; i += stepsize)
         {
             float x = scaleX * Mathf.Cos(i + phaseShiftX) + origin.x;
             float y = scaleY * Mathf.Sin(i + phaseShiftY) + origin.y;

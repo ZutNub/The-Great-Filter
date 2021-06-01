@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour, ITargetable
         animator = GetComponent<EnemyAnimator>();
         animator.Init();
         animator.PlayIdleAnimation();
-        currentPoint = path.getFirstPoint();
+        currentPoint = path.GetFirstPoint();
         cooldown = attackCooldown;
     }
 
@@ -96,11 +96,11 @@ public class Enemy : MonoBehaviour, ITargetable
     {
         if (Vector3.Distance(transform.position, currentPoint.Value) <= distanceTreshhold)
         {
-            if (!isCirclingTarget && currentPoint.Equals(path.getLastPoint()) && path.Target != null)
+            if (!isCirclingTarget && currentPoint.Equals(path.GetLastPoint()) && path.Target != null)
             {
                 isCirclingTarget = true;
-                path = new Path(OrbitCalculator.calculateSinOverCircle(path.Target.getPosition()), path.Target, true);
-                currentPoint = path.getFirstPoint();
+                path = new Path(OrbitCalculator.CalculateSinOverCircle(path.Target.getPosition()), path.Target, true);
+                currentPoint = path.GetFirstPoint();
             }
             else
             {

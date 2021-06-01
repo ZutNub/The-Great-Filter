@@ -28,12 +28,12 @@ public class Path
         Target = target;
     }
 
-    public Point getFirstPoint()
+    public Point GetFirstPoint()
     {
         return points[0];
     }
 
-    public Point getLastPoint()
+    public Point GetLastPoint()
     {
         return points[points.Count - 1];
     }

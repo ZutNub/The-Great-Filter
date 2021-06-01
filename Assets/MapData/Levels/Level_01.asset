@@ -46,13 +46,13 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 1000
+      Data: 5
     - Name: startRotation
       Entry: 4
-      Data: 0
+      Data: 10
     - Name: axisRotation
       Entry: 4
-      Data: 0
+      Data: 308
     - Name: oribitalRotation
       Entry: 4
       Data: 0
@@ -88,13 +88,13 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 0
+      Data: 8
     - Name: startRotation
       Entry: 4
-      Data: 0
+      Data: 20
     - Name: axisRotation
       Entry: 4
-      Data: 0
+      Data: 20
     - Name: oribitalRotation
       Entry: 4
       Data: 0
@@ -130,13 +130,13 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 0
+      Data: 12
     - Name: startRotation
       Entry: 4
-      Data: 0
+      Data: 30
     - Name: axisRotation
       Entry: 4
-      Data: 0
+      Data: 30
     - Name: oribitalRotation
       Entry: 4
       Data: 0
@@ -172,13 +172,13 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 0
+      Data: 15
     - Name: startRotation
       Entry: 4
-      Data: 0
+      Data: 45
     - Name: axisRotation
       Entry: 4
-      Data: 0
+      Data: 45
     - Name: oribitalRotation
       Entry: 4
       Data: 0
@@ -214,13 +214,13 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 0
+      Data: 18
     - Name: startRotation
       Entry: 4
-      Data: 0
+      Data: 70
     - Name: axisRotation
       Entry: 4
-      Data: 0
+      Data: 337
     - Name: oribitalRotation
       Entry: 4
       Data: 0

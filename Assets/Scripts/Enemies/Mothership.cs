@@ -24,7 +24,7 @@ public class Mothership : Enemy
         animator = GetComponent<EnemyAnimator>();
         animator.Init();
         animator.PlayIdleAnimation();
-        currentPoint = path.getFirstPoint();
+        currentPoint = path.GetFirstPoint();
         cooldown = attackCooldown;
         sCooldown = summonCooldown;
     }

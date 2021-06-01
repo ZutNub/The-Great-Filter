@@ -24,9 +24,9 @@ namespace GreatFilter.Map.MapData
             [FoldoutGroup("$name")] [HideLabel] public ADataPlanet planet;
             [FoldoutGroup("$name/Planet Settings")] [HorizontalGroup("$name/Planet Settings/parent")] [LabelWidth(100)] public bool hasParent;
             [ValidateInput("TestParent", "The parent index is invalid")] [HorizontalGroup("$name/Planet Settings/parent")] [ShowIf("hasParent")]  [LabelWidth(100)] public int parent;
-            [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(100, 1000)] public float distance;
+            [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(3, 20)] public float distance;
             [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float startRotation;
-            [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float axisRotation;
+            [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(1, 360)] public float axisRotation;
             [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] [Range(0, 360)] public float oribitalRotation;
             [ShowIf("@!(planet is DataPlanetEnvironment)")] [VerticalGroup("$name/Planet Settings/stats")] [LabelWidth(100)] public bool populated;
 
