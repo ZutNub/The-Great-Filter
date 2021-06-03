@@ -17,6 +17,13 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 5f7df93d0ff9bc24b9604615319c7524, type: 2}
+    - {fileID: 11400000, guid: c3f9c4ae904fdff4fbbb411749b77088, type: 2}
+    - {fileID: 11400000, guid: 3799f863c2071e348b0da0d938afc6af, type: 2}
+    - {fileID: 11400000, guid: e1c0ec76ad6f5e44d827f1b9af59359e, type: 2}
+    - {fileID: 11400000, guid: 72513bd033f967b4dbd4f3ce70e1f240, type: 2}
+    - {fileID: 11400000, guid: 29649e1a038f37e4c9468242f07d8c3c, type: 2}
+    - {fileID: 11400000, guid: 951b204f596b3ff4d86bda53fc88aea8, type: 2}
+    - {fileID: 11400000, guid: 48516b92676d5534f97b913162a6447d, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -46,16 +53,16 @@ MonoBehaviour:
       Data: 0
     - Name: distance
       Entry: 4
-      Data: 5
+      Data: 5.03
     - Name: startRotation
       Entry: 4
-      Data: 10
+      Data: 272.1
     - Name: axisRotation
       Entry: 4
-      Data: 308
+      Data: 172.7
     - Name: oribitalRotation
       Entry: 4
-      Data: 0
+      Data: 94.9
     - Name: populated
       Entry: 5
       Data: false
@@ -78,8 +85,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: planet
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 1
     - Name: hasParent
       Entry: 5
       Data: false
@@ -91,16 +98,16 @@ MonoBehaviour:
       Data: 8
     - Name: startRotation
       Entry: 4
-      Data: 20
+      Data: 158
     - Name: axisRotation
       Entry: 4
-      Data: 20
+      Data: 360
     - Name: oribitalRotation
       Entry: 4
-      Data: 0
+      Data: 341
     - Name: populated
       Entry: 5
-      Data: false
+      Data: true
     - Name: levelEco
       Entry: 3
       Data: 0
@@ -108,7 +115,48 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: turrets
-      Entry: 6
+      Entry: 7
+      Data: 1|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GreatFilter.Map.MapData.ADataTurret,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -120,8 +168,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: planet
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 4
     - Name: hasParent
       Entry: 5
       Data: false
@@ -133,16 +181,16 @@ MonoBehaviour:
       Data: 12
     - Name: startRotation
       Entry: 4
-      Data: 30
+      Data: 0
     - Name: axisRotation
       Entry: 4
-      Data: 30
+      Data: 48.8
     - Name: oribitalRotation
       Entry: 4
-      Data: 0
+      Data: 333
     - Name: populated
       Entry: 5
-      Data: false
+      Data: true
     - Name: levelEco
       Entry: 3
       Data: 0
@@ -150,7 +198,48 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: turrets
-      Entry: 6
+      Entry: 7
+      Data: 3|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[GreatFilter.Map.MapData.ADataTurret,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 4|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -162,8 +251,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: planet
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 6
     - Name: hasParent
       Entry: 5
       Data: false
@@ -175,13 +264,13 @@ MonoBehaviour:
       Data: 15
     - Name: startRotation
       Entry: 4
-      Data: 45
+      Data: 121
     - Name: axisRotation
       Entry: 4
-      Data: 45
+      Data: 78
     - Name: oribitalRotation
       Entry: 4
-      Data: 0
+      Data: 166
     - Name: populated
       Entry: 5
       Data: false
@@ -204,8 +293,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: planet
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 7
     - Name: hasParent
       Entry: 5
       Data: false
@@ -220,10 +309,10 @@ MonoBehaviour:
       Data: 70
     - Name: axisRotation
       Entry: 4
-      Data: 337
+      Data: 100.5
     - Name: oribitalRotation
       Entry: 4
-      Data: 0
+      Data: 265.1
     - Name: populated
       Entry: 5
       Data: false
@@ -247,7 +336,7 @@ MonoBehaviour:
       Data: 
     - Name: waves
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveSetup,
+      Data: 5|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveSetup,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -260,7 +349,7 @@ MonoBehaviour:
       Data: Wave 0
     - Name: spawns
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+      Data: 6|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -282,7 +371,7 @@ MonoBehaviour:
       Data: Wave 1
     - Name: spawns
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+      Data: 7|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -304,7 +393,7 @@ MonoBehaviour:
       Data: Wave 2
     - Name: spawns
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
+      Data: 8|System.Collections.Generic.List`1[[GreatFilter.Map.MapData.DataLevel+WaveEntry,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12

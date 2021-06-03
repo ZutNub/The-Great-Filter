@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   mass: 214
-  size: 20.64
-  turretSlots: 4
+  size: 1
+  turretSlots: 2
   resource_0: 2
   resource_1: 2
   resource_2: 2
